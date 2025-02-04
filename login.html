@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnScape - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">LearnScape</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><button id="dark-mode-toggle">🌙</button></li>
+        </ul>
+    </nav>
+
+    <!-- Login/Signup Form -->
+    <section class="form-container fade-in">
+        <h2 id="form-title">Login</h2>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="handleAuth()">Login</button>
+        <p id="toggle-form">Don't have an account? <span onclick="toggleForm()">Sign Up</span></p>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

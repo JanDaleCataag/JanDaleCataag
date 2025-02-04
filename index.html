@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LearnScape - Online Coding</title>
+    <title>LearnScape - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,35 +12,22 @@
     <nav class="navbar">
         <div class="logo">LearnScape</div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#editor">Code Editor</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" id="auth-link">Login</a></li>
             <li><button id="dark-mode-toggle">🌙</button></li>
         </ul>
         <div class="menu-toggle">&#9776;</div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home">
+    <!-- Home Content -->
+    <section class="fade-in">
         <h1>Welcome to LearnScape</h1>
-        <p>Write, run, and test JavaScript code online.</p>
-    </section>
-
-    <!-- Code Editor Section -->
-    <section id="editor">
-        <h2>Online JavaScript Editor</h2>
-        <textarea id="code" placeholder="Write JavaScript code here..."></textarea>
-        <button onclick="runCode()">Run Code</button>
-        <h3>Output:</h3>
-        <iframe id="output"></iframe>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: support@learnscape.com</p>
+        <p>Learn to code interactively with real-time execution.</p>
+        <a href="login.html" class="btn">Get Started</a>
     </section>
 
     <script src="script.js"></script>
+    <script src="auth.js"></script>
 </body>
 </html>

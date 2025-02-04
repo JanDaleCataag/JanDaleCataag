@@ -4,6 +4,13 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #1e1e1e;
+    color: #fff;
 }
 
 /* Navigation Bar */
@@ -45,6 +52,14 @@ body {
     text-decoration: underline;
 }
 
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
 /* Mobile Menu */
 .menu-toggle {
     display: none;
@@ -52,10 +67,34 @@ body {
     cursor: pointer;
 }
 
-/* Sections */
-section {
-    padding: 50px;
-    border-bottom: 1px solid #ddd;
+/* Code Editor Section */
+#editor {
+    padding: 30px;
+    background: #f4f4f4;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+    border: none;
+}
+
+iframe {
+    width: 80%;
+    height: 100px;
+    border: 1px solid #ddd;
+    background: white;
 }
 
 /* Responsive Design */
@@ -77,5 +116,13 @@ section {
 
     .menu-toggle {
         display: block;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    iframe {
+        width: 90%;
     }
 }
